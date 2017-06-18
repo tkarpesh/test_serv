@@ -1,0 +1,11 @@
+default: &default
+  adapter:  postgresql
+  host:     localhost
+  encoding: unicode
+  pool:     5
+  username: tania
+  password: tania
+
+development:
+  <<: *default
+  database: railsbase_development
